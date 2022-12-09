@@ -1,0 +1,125 @@
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .portfolio__item {
+    background: var(--color-bg-variant);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+  }
+  
+  .portfolio__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+  }
+  
+  .portfolio__item-image {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  .portfolio__item h3 {
+    margin: 1.4rem 0 2rem;
+  }
+  
+  .portfolio__item-cta {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* ########## MEDIA QUERIES (TABLETS) ########## */
+  @media screen and (max-width: 1024px) {
+    .btn {
+      overflow: hidden;
+    }
+    .portfolio__container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.8rem;
+      margin-bottom: 0.1rem;
+    }
+    .portfolio__container > article {
+      padding: 0.5rem;
+      overflow: scroll;
+    }
+    .portfolio__item-cta {
+      padding: 0.5rem;
+      overflow: scroll;
+      display: contents;
+    }
+    .portfolio__item-cta a {
+      padding: 0.1rem;
+      overflow: scroll;
+      display: grid;
+      grid-auto-columns: min-content;
+    }
+    .portfolio__item h3 {
+      font-size: small;
+    }
+  }
+  
+  /* ########## MEDIA QUERIES (PHONE) ########## */
+  @media screen and (max-width: 800px) {
+    .btn {
+      overflow: hidden;
+    }
+    .portfolio__container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.8rem;
+      margin-bottom: 0.1rem;
+    }
+    .portfolio__container > article {
+      padding: 0.5rem;
+      overflow: scroll;
+    }
+    .portfolio__item-cta {
+      padding: 0.5rem;
+      overflow: scroll;
+      display: contents;
+    }
+    .portfolio__item-cta a {
+      padding: 0.1rem;
+      overflow: scroll;
+      display: grid;
+      grid-auto-columns: min-content;
+    }
+    .portfolio__item h3 {
+      font-size: small;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .btn {
+      overflow: hidden;
+    }
+    .portfolio__container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.2rem;
+      margin-bottom: 0.1rem;
+    }
+    .portfolio__container > article {
+      padding: 0.5rem;
+      overflow: scroll;
+    }
+    .portfolio__item-cta {
+      padding: 0.5rem;
+      overflow: scroll;
+      display: contents;
+    }
+    .portfolio__item-cta a {
+      padding: 0.1rem;
+      overflow: scroll;
+      display: grid;
+      grid-auto-columns: min-content;
+    }
+    .portfolio__item h3 {
+      font-size: small;
+    }
+  }
